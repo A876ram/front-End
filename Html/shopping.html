@@ -1,0 +1,347 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta http-equiv="x-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=divice-width,initial-scale=1.0">
+<title>shopping</title>
+<!--link css-->
+<link rel="stylesheet" href="../css/shopping.css">
+<!--box icons-->
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+
+
+</head>
+
+<body>
+    <header >
+        <div class="nav container">
+            <a href="../Html/Home.html" class="logo"><img src="../image/logore-removebg-previewrrr.png" alt="" class="betaimg"></a>
+      <div class="toggleMenu" onclick="toggleMenu();"></div>
+      <ul class="navigation">
+          <li><a href="../Html/texthome.html">الصفحة الرئيسية</a></li>
+          <li><a href="../Html/fruit.html">الفواكهة</a></li>
+          <li><a href="../Html/vegetables.html">الخضراوات</a></li>
+          <li><a href="../Html/herbs.html">الأعشاب</a></li>
+          <li><a href="../Html/plants.html">الزينة</a></li>
+          <li><a href="../Html/shopping.html">متجر</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+          &nbsp; &nbsp;
+        
+             <i class='bx bx-cart'id="cart-icon" ></i>
+             
+             <div class="cart">
+                <h2 class="cart-title">Your cart</h2>
+              
+                <div class="cart-content">
+                   </div>
+                
+                <div class="total">
+                    <div class="total-titel">Total</div>
+                    <div class="total-price">$0</div>
+                </div>
+                
+                <button type="button"class="btn-buy">الشراء الان</button>
+               
+                <i class='bx bx-x' id="close-cart"></i>
+
+
+             </div>
+        </div>
+    </header> 
+
+    <!-- <header>
+      <a href="../Html/Home.html" class="logo"><img src="../image/logore-removebg-previewrrr.png" alt="" class="betaimg"></a>
+      <div class="toggleMenu" onclick="toggleMenu();"></div>
+      <ul class="navigation">
+          <li><a href="../Html/Home.html">الصفحة الرئيسية</a></li>
+          <li><a href="../Html/fruit.html">الفواكهة</a></li>
+          <li><a href="../Html/vegetables.html">الخضراوات</a></li>
+          <li><a href="../Html/herbs.html">الأعشاب</a></li>
+          <li><a href="../Html/plants.html">الزينة</a></li>
+          <li><a href="../Html/shopping.html">متجر</a></li>
+          <li><a href="#contact">تواصل معنا</a></li>
+          <i class='bx bx-cart'id="cart-icon" ></i>
+             
+             <div class="cart">
+                <h2 class="cart-title">Your cart</h2>
+             
+                <div class="cart-content">
+                   </div>
+                <total-->
+            
+
+
+    <!--shop-->
+    <section class="shop container">
+        <h2 class="section-title">متجر النبات</h2>
+          <!--content-->
+          <div dir="ltr" class="shop-content">
+              <!--box1-->
+              <div class="product-box">
+             <img src="../img/f1.jpg" alt="" class="product-img">
+             <h2 class="product-title">وردبلدي</h2>
+             <span class="price">$2</span>
+             
+             <i class='bx bxs-cart add-cart' ></i>
+              </div>
+                            <!--box2-->
+                            <div class="product-box">
+                                <img src="../img/f2.jpg" alt="" class="product-img">
+                                <h2 class="product-title">وردبلدي روز</h2>
+                                <span class="price">$3</span>
+                                <i class='bx bxs-cart add-cart' ></i>
+                                 </div>
+                             <!--box3-->
+              <div class="product-box">
+                <img src="../img/f3.jpg" alt="" class="product-img">
+                <h2 class="product-title">شجر الزينه</h2>
+                <span class="price">$5</span>
+                
+                <i class='bx bxs-cart add-cart' ></i>
+                 </div>
+                          <!--box4-->
+                          <div class="product-box">
+                            <img src="../img/f4.jpeg" alt="" class="product-img">
+                            <h2 class="product-title">جهنميه</h2>
+                            <span class="price">$4</span>
+                            <i class='bx bxs-cart add-cart' ></i>
+                             </div>
+                             <!--box5-->
+              <div class="product-box">
+                <img src="../img/f5.jpg" alt="" class="product-img">
+                <h2 class="product-title">ورد زينه</h2>
+                <span class="price">$1</span>
+                <i class='bx bxs-cart add-cart' ></i>
+                 </div>
+                           <!--box6-->
+                           <div class="product-box">
+                            <img src="../img/f6.jpg" alt="" class="product-img">
+                            <h2 class="product-title"> مسك الليل</h2>
+                            <span class="price">$2</span>
+                            <i class='bx bxs-cart add-cart' ></i>
+                             </div>
+                             <!--box7-->
+              <div class="product-box">
+                <img src="../img/f18.jpg" alt="" class="product-img">
+                <h2 class="product-title">جهنميه الوان</h2>
+                <span class="price">$3</span>
+                <i class='bx bxs-cart add-cart' ></i>
+                 </div>
+                          <!--box8-->
+                          <div class="product-box">
+                            <img src="../img/f15.jpg" alt="" class="product-img">
+                            <h2 class="product-title">نبات الصبار</h2>
+                            <span class="price">$3</span>
+                            <i class='bx bxs-cart add-cart' ></i>
+                             </div>
+                             <!--box9-->
+              <div class="product-box">
+                <img src="../img/f9.jpg" alt="" class="product-img">
+                <h2 class="product-title">جهنميه اصفر</h2>
+                <span class="price">$2</span>
+                <i class='bx bxs-cart add-cart' ></i>
+                 </div>
+                 <!--box10-->
+              <div class="product-box">
+                <img src="../img/f10.jpg" alt="" class="product-img">
+                <h2 class="product-title">زهورحمراء</h2>
+                <span class="price">$1</span>
+                <i class='bx bxs-cart add-cart' ></i>
+                 </div>
+                 <!--box11-->
+              <div class="product-box">
+                <img src="../img/f11.jpg" alt="" class="product-img">
+                <h2 class="product-title">ورد ملون</h2>
+                <span class="price">$2</span>
+                <i class='bx bxs-cart add-cart' ></i>
+                 </div>
+              <!--box12-->
+              <div class="product-box">
+                <img src="../img/f12.jpg" alt="" class="product-img">
+                <h2 class="product-title">ورد الظل</h2>
+                <span class="price">$1</span>
+                <i class='bx bxs-cart add-cart' ></i>
+                 </div>
+                  <!--box13-->
+              <div class="product-box">
+                <img src="../img/f13.jpg" alt="" class="product-img">
+                <h2 class="product-title">ورد بنفسج</h2>
+                <span class="price">$2</span>
+                <i class='bx bxs-cart add-cart' ></i>
+                 </div>
+                  <!--box14-->
+              <div class="product-box">
+                <img src="../img/f14.jpg" alt="" class="product-img">
+                <h2 class="product-title">نبات الصبار</h2>
+                <span class="price">$2</span>
+                <i class='bx bxs-cart add-cart' ></i>
+                 </div>
+                  <!--box15-->
+              <div class="product-box">
+                <img src="../img/f15.jpg" alt="" class="product-img">
+                <h2 class="product-title">نبات الصبارم</h2>
+                <span class="price">$1</span>
+                <i class='bx bxs-cart add-cart' ></i>
+                 </div>
+                  <!--box16-->
+              <div class="product-box">
+                <img src="../img/f16.jpg" alt="" class="product-img">
+                <h2 class="product-title">ورد موسمي</h2>
+                <span class="price">$3</span>
+                <i class='bx bxs-cart add-cart' ></i>
+                 </div>
+                  <!--box17-->
+              <div class="product-box">
+                <img src="../img/f17.jpg" alt="" class="product-img">
+                <h2 class="product-title">نبات الظل</h2>
+                <span class="price">$2</span>
+                <i class='bx bxs-cart add-cart' ></i>
+                 </div>
+                  <!--box18-->
+              <div class="product-box">
+                <img src="../img/f18.jpg" alt="" class="product-img">
+                <h2 class="product-title">نبات الصبار</h2>
+                <span class="price">$2</span>
+                <i class='bx bxs-cart add-cart' ></i>
+                 </div>
+                  <!--box19-->
+              <div class="product-box">
+                <img src="../img/f19.jpg" alt="" class="product-img">
+                <h2 class="product-title">ورد بلدي</h2>
+                <span class="price">$3</span>
+                <i class='bx bxs-cart add-cart' ></i>
+                 </div>
+                  <!--box20-->
+              <div class="product-box">
+                <img src="../img/f20.jpg" alt="" class="product-img">
+                <h2 class="product-title">داراسينا</h2>
+                <span class="price">$2</span>
+                <i class='bx bxs-cart add-cart' ></i>
+                 </div>
+                
+                                   
+          </div>
+    </section>
+
+    <a name="contact"></a>
+    <div class="contact">
+        <div class="contact-body">
+            <h1 class="contact_title">تواصل معنا</h1>
+            <div class="contact-items">
+                <div class="contact-item">
+                    <h2 class="contact-item-title">اتصل بينا</h2><br>
+                    <div class="contact-item-links">
+                        <a href="https://acu.edu.eg/" class="contact-item-link" target="_blank">
+                            <div class="contact-item-link">
+                                <i class="fa-solid fa-building-columns"></i>
+                            </div>
+                            <span class="contact-item-link-title">Cairo - Giza</span>
+                        </a>
+                        <a href="tel:+0238333078" class="contact-item-link">
+                            <div class="contact-item-link">
+                                <i class="fa-solid fa-phone"></i>
+                            </div>
+                            <span class="contact-item-link-title">01220978902</span>
+                        </a>
+                        <a href="mailto:info@acu.edu.eg" class="contact-item-link">
+                            <div class="contact-item-link"><i class="fa-solid fa-envelope"></i></div>
+                            <span class="contact-item-link-title">supportplant@gmail.com</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <h2 class="contact-item-title">مصر</h2><br>
+                    <div class="contact-item-links">
+                        <a href="../Html/Home.html" class="contact-item-link">
+                            <span class="contact-item-link-title">الصفحة الرئيسية</span>
+                        </a>
+                        <a href="../Html/fruit.html" class="contact-item-link">
+                            <span class="contact-item-link-title">الفواكهة</span>
+                        </a>
+                        <a href="../Html/vegetables.html" class="contact-item-link">
+                            <span class="contact-item-link-title">الخضار</span>
+                        </a>
+                        <a href="../Html/plants.html" class="contact-item-link">
+                            <span class="contact-item-link-title">الزينة</span>
+                        </a>
+                        <a href="../Html/herbs.html" class="contact-item-link">
+                            <span class="contact-item-link-title">الاعشاب</span>
+                        </a>
+                        <a href="../Html/shopping.html" class="contact-item-link">
+                            <span class="contact-item-link-title">المتجر</span>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <h2 class="contact-item-title">الدعم</h2><br>
+                    <div class="contact-item-links">
+                        <a href="#" class="contact-item-link">
+                            <span class="contact-item-link-title">مساعدة</span>
+                        </a>
+                        <!-- <a href="#" class="contact-item-link">
+                            <span class="contact-item-link-title">Booking</span>
+                        </a> -->
+                        <a href="#" class="contact-item-link">
+                            <span class="contact-item-link-title">اشتراك</span>
+                            <a href="#" class="contact-item-link">
+                                <span class="contact-item-link-title">تسجيل الدخول</span>
+                            </a>
+                        </a>
+                    </div>
+                </div>
+                <div class="contact-item">
+                    <h2 class="contact-item-title">
+                        Team of Services
+                    </h2><br>
+                    <h4 class="contact-item-title">
+                        Ahmed Amr 
+                    </h4>
+                    <a href="https://www.facebook.com/profile.php?id=100075442860793&mibextid=ZbWKwL" title="Facebook" target="_blank"><i class="fa-brands fa-facebook" ></i></a>
+                            <a href="https://www.linkedin.com/in/ahmed-amr-mahmoud-a405b5232" title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                            <a href="https://github.com/A876ram" title="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+                            <a href="mailto:a0087z.a@gmail.com" title="Gmail" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+    
+                            <h4 class="contact-item-title">
+                                Reem Haitham 
+                            </h4>
+                            <a href="https://www.facebook.com/reem2468" title="Facebook" target="_blank"><i class="fa-brands fa-facebook" ></i></a>
+                                    <a href="https://www.linkedin.com/in/reem-haitham-b6890121a" title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                    <a href="https://github.com/reemhaitham12" title="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                    <a href="mailto:reemhaitham69@gmail.com" title="Gmail" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                            <h4 class="contact-item-title">
+                                        Hoda Hussien
+                                    </h4>
+                                    <a href="https://www.facebook.com/moustafa.krm.79/" title="Facebook" target="_blank"><i class="fa-brands fa-facebook" ></i></a>
+                                            <a href="https://www.linkedin.com/in/moustafa-karam-5ab03921b/" title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                            <a href="https://github.com/Moustafa-Karam" title="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                            <a href="mailto:moustafakarammohammed77@gmail.com" title="Gmail" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                            <h4 class="contact-item-title">
+                                                Haidy Hussien
+                                            </h4>
+                                            <a href="https://www.facebook.com/HamsaElaila?mibextid=ZbWKwL" title="Facebook" target="_blank"><i class="fa-brands fa-facebook" ></i></a>
+                                                    <a href="https://www.linkedin.com/in/hamsa-el-aila-717a8a231" title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                                    <a href="https://github.com/HamsaElAila" title="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                                    <a href="mailto:hamsamedhat14@gmail.com" title="Gmail" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+    
+                            <h4 class="contact-item-title">
+                                                        Seif ELnemr
+                                                    </h4>
+                                                    <a href="https://www.facebook.com/reem2468" title="Facebook" target="_blank"><i class="fa-brands fa-facebook" ></i></a>
+                                                            <a href="https://www.linkedin.com/in/reem-haitham-b6890121a" title="Linkedin" target="_blank"><i class="fa-brands fa-linkedin"></i></a>
+                                                            <a href="https://github.com/reemhaitham12" title="GitHub" target="_blank"><i class="fa-brands fa-github"></i></a>
+                                                            <a href="mailto:" title="Gmail" target="_blank"><i class="fa-solid fa-envelope"></i></a>
+                </div>
+            </div>
+        </div>
+      </div> 
+<!--link to js-->
+<script src="../js/shopping.js"></script>
+
+
+
+
+
+</body>
+
+</html>

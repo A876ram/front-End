@@ -1,0 +1,325 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: white;/*rgb(206, 203, 203)*/
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+header.sticky{
+    background-color: #569753;
+    box-shadow: 0 5px 10px #000;
+}
+ header .logo{
+    position:relative;
+    font-size: 1.9em;
+    color: #000; /*#fff*/
+ }
+.betaimg{
+    width: 150px;
+    height:60px;
+}
+header .navigation{
+    position: relative;
+    display:flex;
+}
+
+header .navigation li{
+    list-style: none;
+}
+
+header .navigation li a{
+    display: inline-block;
+    color: #000;  /*#fff*/
+    margin-right: 40px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 12px;
+    transition: 0.3s ease;
+}
+
+header .navigation li a:hover{
+    color: #569753;
+    background-color:#000;
+    border-radius: 10px; /*4rem*/
+    transition: 0.5s ease;
+    box-shadow: 0 0 10px #000;
+}
+.row{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+}
+.column{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 100px 0;
+    font-size: 100%;
+}
+.col-1{
+    flex-basis: 40%;
+    position: relative;
+    margin-left: 70px;
+    margin-right: 100px;
+}
+.col-1 h2{
+    font-size: 30px;
+}
+.col-1 p{
+    text-decoration-style: solid;
+    margin: 30px 0;
+    color: #569753;
+    font-size: 20px;
+}
+.col-2{
+    position:relative;
+    flex-basis: 40%;
+    display: flex;
+    align-items: center;
+    
+}
+.col-2 .controller{
+    width: 60%;
+}
+.col-1 .controller{
+    width: 70%;
+}
+.controller{
+    border-radius: 50px;
+}
+
+
+
+.container{
+    min-height: 100vh;
+    max-width: 1000px;
+    width: 100%;
+    margin: 0 auto;
+}
+
+.images {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.images .image-box{
+    margin: 8px;
+}
+.container .images .image-box{
+    position: relative;
+    height: 300px;
+    width: 210px;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.images .image-box img{
+    height: 100%;
+    width: 100%;
+    border-radius: 6px;
+    transition: transform 0.2s linear;
+}
+.image-box:hover img{
+    transform: scale(1.05);
+}
+
+/*.................................*/
+
+.videos {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.videos .image-box{
+    margin: 8px;
+}
+.container .videos .image-box{
+    position: relative;
+    height: 350px;
+    width: 210px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.videos .image-box video {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+}
+
+/*.................................*/
+.mark{
+    background-color: #569753;
+    color: #000;
+}
+
+/*.........contact...............*/
+section{
+    color: #eee;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #80cd83;
+}
+
+.contact-body{
+    width: 1640px;
+    padding:60px 40px;
+}
+.contact_title{
+    padding-bottom: 30px;
+    text-align: center;
+    font-size: 60px;
+}
+.contact-items{
+    display: flex;
+    justify-content: space-between;
+}
+.contact-item-links{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.contact-item-link{
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    transition: color 0.3s;
+    color: #eee;
+}
+.contact-item-link:hover{
+    color: #000;
+    transition: 0.3s ease;
+    
+}
+.contact-item-link-title{
+    display: block;
+    width: 210px;
+    word-wrap:break-word;
+    font-weight: bold;
+    font-size: 15px;
+}
+i{
+    color: #eee;
+    width: 30px;
+    font-size: 20px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+i:hover{
+    color: #000;
+    transition: 0.5s ease;
+    transform: scale(1.3);
+}
+/*..........................*/
+
+@media (max-width: 991px){
+    .row{
+        flex-direction: column-reverse;
+        margin: 50px ;
+    }
+    .column{
+        flex-direction: column;
+        margin: 50px ;
+    }
+    .col-2{
+        flex-basis: 90%;
+        margin-bottom: 60px;
+        margin-top: 60px;
+        margin-left: 50px;
+    }
+    .col-2 .controller{
+        width: 100%;
+    }
+    header{
+        padding: 15px 40px;
+        background-size: cover;
+        background-position: center;
+    }
+    header .navigation{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #569753;
+        z-index: 10;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    header .navigation li a{
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    .toggleMenu{
+       /*when press the menu-btn show the border of links */
+        position: relative;
+        background-size: 30px;
+        background: url(../image/icons8-circled-menu-60.png);
+        width: 30px;
+        height: 30px;
+        background-position: center; 
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 11;
+    }
+    .toggleMenu.active{
+        /*when press the menu-btn show the icon close x and the opposite */
+        z-index: 999;
+        position: relative;
+        background: url(../image/6447-200.png);
+        width: 30px;
+        height: 30px;
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    header .navigation.active{
+        display: flex;
+    }
+    .contact-items{
+        flex-direction: column;
+        align-items: center;
+        gap: 25px;
+    }
+    .contact-body{
+        padding: 60px 20px;
+    }
+    .contact-item{
+        width: 100%;
+    }
+    .contact-item-title{
+        font-size: 35px;
+    }
+}
+/*.......ul li........*/
+.column .col-1 ul li{
+    font-size: 1.2em;
+}
+.column .col-1 p{
+    font-size: 15px;
+    font-weight: 900;
+}

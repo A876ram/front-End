@@ -1,0 +1,132 @@
+.landing{
+    background-image: url('../image/image2ps.jpg');
+    background-size: cover;
+    height: calc(100vh - 70px);
+    position: relative;
+  }
+  .landing .intro-text{
+    position: absolute;
+    left: 45%;
+    top: 40%;
+    transform: translate(-40%,-50%);
+    width: 390px;
+    max-width: 100%;
+    color:#1b5e0b;
+  }
+  .landing .intro-text h1{
+    margin: 0;
+    font-weight: bold;
+    font-size: 50px;
+  }
+  .landing .intro-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    text-align: center;
+  }
+  
+.card-list{
+    width: 100%;
+    display:flex;
+    justify-content: space-between;
+    
+  }
+  .card{
+    margin: 30px auto;
+      transition: 0.4s;
+      width: 350px;
+      height: 600px;
+      border-radius: 20px;
+      overflow: hidden;
+      border: 8px solid #fff;
+      position: relative;
+  }
+  .card_image img{
+    width: 100%;
+    height: 100%;
+    border-radius: 15px;
+
+  }
+  .card:hover{
+    transform: scale(0.9,0.9);
+  }
+  a{
+    text-decoration: none;
+    color: #000;
+  }
+
+  
+  /* .cards-list{
+    padding-bottom: 50px;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    
+  }
+  .card{
+    margin: 30px auto;
+    width: 250px;
+    height: 300px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: 0.4s;
+  }
+  .card_image{
+    width: inherit;
+    height: inherit;
+  }
+  .card_image img{
+    width: inherit;
+    height: inherit;
+    border-radius: 5px;
+    clip-path: circle();
+    object-fit: cover;
+    justify-content:center;
+    position:static;
+
+  }
+  .card_title{
+    color: #ecb10d;
+    text-align: center;
+    font-size: 17px;
+    line-height: 0.1;
+  }
+  .card:hover{
+    transform: scale(0.9,0.9);
+  } */
+ .caption{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  padding: 15px;
+  top: 0;
+  left: 0;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  flex-direction: column;
+  background: rgb(255,255,255,0.5);
+  color: #222;
+  opacity: 0;
+  transition: opacity 0.30s;
+ }
+ .caption:hover{
+  opacity: 1;
+ }
+ .caption h1{
+  font-size: 25px;
+ }
+ @media  screen and (max-width: 992px){
+    .card-list{
+      grid-template-columns: repeat(2,1fr);
+    }
+  
+ }
+
+ @media screen and (max-width: 568px){
+  .card-list{
+    grid-template-columns: 1fr;
+  }
+ }

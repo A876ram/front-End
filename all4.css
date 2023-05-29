@@ -1,0 +1,114 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+body{
+    background: white;/*rgb(206, 203, 203)*/
+}
+header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 7px 50px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 999;
+}
+header.sticky{
+    background-color: #569753;
+    box-shadow: 0 5px 10px #000;
+}
+ header .logo{
+    position:relative;
+    font-size: 1.9em;
+    color: #000; /*#fff*/
+ }
+.betaimg{
+    width: 150px;
+    height:60px;
+}
+header .navigation{
+    position: relative;
+    display:flex;
+}
+
+header .navigation li{
+    list-style: none;
+}
+
+header .navigation li a{
+    display: inline-block;
+    color: #000;  /*#fff*/
+    margin-right: 40px;
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 700;
+    padding: 12px;
+    transition: 0.3s ease;
+}
+
+header .navigation li a:hover{
+    color: #AD764A;
+    background-color:#000;
+    border-radius: 10px; /*4rem*/
+    transition: 0.5s ease;
+    box-shadow: 0 0 10px #000;
+}
+@media (max-width: 991px){
+    header{
+        padding: 15px 40px;
+        background-size: cover;
+        background-position: center;
+    }
+    header .navigation{
+        position: fixed;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+        background: #569753;
+        z-index: 10;
+        display: none;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    header .navigation li a{
+        font-size: 24px;
+        margin: 10px 0;
+    }
+    .toggleMenu{
+       /*when press the menu-btn show the border of links */
+        position: relative;
+        background-size: 30px;
+        background: url(../image/icons8-circled-menu-60.png);
+        width: 30px;
+        height: 30px;
+        background-position: center; 
+        background-repeat: no-repeat;
+        cursor: pointer;
+        z-index: 11;
+    }
+    .toggleMenu.active{
+        /*when press the menu-btn show the icon close x and the opposite */
+        z-index: 999;
+        position: relative;
+        background: url(../image/6447-200.png);
+        width: 30px;
+        height: 30px;
+        background-size: 25px;
+        background-position: center;
+        background-repeat: no-repeat;
+    }
+    header .navigation.active{
+        display: flex;
+    }
+}
+a{
+    text-decoration: none;
+    color: #000;
+}
